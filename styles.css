@@ -1,0 +1,215 @@
+p.Your_result,p.summary,p.plain_text{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/****************** Internal icon ****************/
+.Reaction_icon,.Memory_icon,.Verbal_icon,.Visual_icon{
+    position: relative;
+    bottom: 30px;
+}
+
+/*************** Internal Text ***********************/
+p.Reaction_text,p.Memory_text,p.Verbal_text,p.Visual_text{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    font-weight: 800;
+}
+
+p.Your_result{
+    text-align: center !important;
+    color: rgba(240, 248, 255, 0.692);
+}
+
+.score_box{
+    background-color: hsla(222, 87%, 29%, 0.424);
+    border-radius: 110px;
+}
+
+p.score_box_text1,p.score_box_text2,p.score_box_text3{
+    text-align: center !important;
+    font-weight: 500 !important;
+    font-family: "Hanken Grotesk" !important;
+}
+
+p.score_box_text1{
+    padding: 20px 0 0 0 ;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: 800 !important;
+    font-size: 3rem !important;
+}
+
+p.score_box_text2{ color: rgba(240, 248, 255, 0.692); }
+
+p.score_box_text3{
+    font-size: 18px !important;
+    color: rgba(240, 248, 255, 0.692) !important;
+}
+
+p.plain_text{
+    text-align: center !important;
+    color: white;
+}
+    
+p.summary{
+        padding: 20px 0 0 20px;
+        color: rgba(0, 0, 0, 0.692);
+        margin-bottom: 25px;
+}
+
+/********** Reaction Box ***********************************/
+.Reaction_box{ background-color: rgb(255, 235, 235); }
+p.Reaction_text{ color: hsl(0, 100%, 67%); }
+    
+/********** Memory Box ***********************************/
+.Memory_box{ background-color: rgb(253, 248, 223); }
+p.Memory_text{ color: hsl(39, 100%, 56%); }
+    
+/********** Verbal Box ***********************************/
+.Verbal_box{ background-color: rgb(240, 255, 232); }
+p.Verbal_text{ color: hsl(166, 100%, 37%); }
+    
+/********** Visual Box ***********************************/
+.Visual_box{ background-color: rgb(224, 237, 251); }
+p.Visual_text{ color: hsl(234, 85%, 45%); }
+
+button{
+    background-color: rgb(8, 8, 54);
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(13, 6, 89);
+}
+button:active{
+    background-color: rgb(240, 255, 232);
+    color: black;
+} 
+
+@media (min-width: 500px) {
+    .apply_box1,.apply_box2{
+        top: 220px;
+        position: absolute;
+        height: 370px;
+        border-radius: 15px;
+    }
+    
+    /******** Internal Boxes ****************/
+    .Reaction_box,.Memory_box,.Verbal_box,.Visual_box{
+        width: 210px;
+        height: 40px;
+        border-radius: 8px;
+        margin: 0 0 20px 60px;
+    }
+    
+    /************************* BOX 1  *******************/
+    .apply_box1{
+        left: 400px;
+        width: 230px;
+        background-color: hsla(216.941, 80%, 50%, 1);
+        z-index: 1;
+    }
+
+    p.Your_result{ padding: 20px 0 0 0; }
+    
+    .score_box{
+        margin: 0 0 15px 45px;
+        width: 140px;
+        height: 140px;
+    }
+    
+    /************ BOX 2 *******************/
+    .apply_box2{
+        left: 600px;
+        width: 300px;
+        background-color: rgb(255, 255, 255) ;
+        box-shadow: 3px 3px 20px #dbdffb;
+    }
+    
+    p.summary{ padding: 20px 0 0 60px; }
+    
+    /********** Visual Box ***********************************/
+    .Visual_box{ margin-bottom: 25px; }
+    
+    /************************** Button ********************/
+    button{
+        margin: 0 0 25px 60px !important;
+        width: 210px;
+        height: 40px;
+        border-radius: 20px !important;
+    }
+}
+     
+@media only screen and (max-width: 480px) {
+    .container-fluid{
+        border: 0px;
+    }
+    
+    p.Your_result,p.summary,p.plain_text{ padding: 20px 0 0 0; }
+    
+    /******** Internal Boxes ****************/
+    .Reaction_box,.Memory_box,.Verbal_box,.Visual_box{
+        width: 315px;
+        height: 45px;
+        border-radius: 12px;
+        margin: 0 0 20px 20px;
+    }
+    
+    /************************* BOX 1  *******************/
+    .apply_box1{
+        width: 375px;
+        position: absolute;
+        left: 0;
+        height: 330px;
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: hsla(216.941, 80%, 50%, 1);
+        z-index: 1;
+    }
+    
+    .score_box{
+        position: relative;
+        left: 115px;
+        width: 135px;
+        height: 135px;
+    }
+
+    p.score_box_text3{ margin: 0 45px 20px 45px; }
+
+    p.plain_text{ margin: 0 0 0 0; }
+    
+    /************ BOX 2 *******************/
+    .apply_box2{
+        position: absolute;
+        top: 320px;
+        height: 337px;
+        border-radius: 15px;
+        width: 375px;
+        background-color: rgb(255, 255, 255) ;
+    }
+    
+    /********** Reaction Box ***********************************/
+    p.Reaction_text{ word-spacing: 45px; }
+    
+    /********** Memory Box ***********************************/
+    p.Memory_text{ word-spacing: 47px; }
+    
+    /********** Verbal Box ***********************************/
+    p.Verbal_text{ word-spacing: 33px; }
+    
+    /********** Visual Box ***********************************/
+    .Visual_box{ margin-bottom: 30px; }
+    
+    p.Visual_text{ word-spacing: 34px; }
+    
+    /************************** Button ********************/
+    button{
+        margin: 0 0 25px 20px !important;
+        width: 315px;
+        height: 45px;
+        border-radius: 25px !important;
+    }
+}
